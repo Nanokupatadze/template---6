@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --tetri: #ffffff82;
+    --nacri: #808080;
+    --muqnac: #5a5a5a;
+    --orange: #f09536;
+    --gia: #ababab;
+    --surati: url(../img/pexels-eberhard-grossgasteiger-1287145.jpg);
+    --svit: #000;
+}
+body{
+    background-image: var(--surati);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.5s;
+}
+.switch{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 50px;
+    /* color: var(--muqnac); */
+    color: var(--svit);
+}
+.calculator{
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--tetri);
+    border: 1px solid #b6b6b6;
+    margin: 100px auto;
+}
+.calcHead{
+    padding: 50px 0;
+    background-color: var(--muqnac);
+}
+.gamosaxuleba{
+    text-align: right;
+}
+/* .calcbuton{
+
+} */
+.answer{
+    text-align: right;
+    font-size: 32px;
+}
+.calcbuton.flex{
+    flex-wrap: wrap;
+}
+.btn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.btn.flex{
+    justify-content: center;
+}
+.zero{
+    width: 180px;
+    border-radius: 80px;
+    padding-left: 30px;
+}
+.zero.flex{justify-content: flex-start;
+}
+.nacari{
+    background-color: var(--nacri);
+}
+.tetri{
+    background-color: var(--tetri);
+}
+.orange{
+    background-color: var(--orange);
+}
+.muqi{
+    background-color: var(--muqnac);
+}
+.gia{
+    background-color: var(--gia);
+}

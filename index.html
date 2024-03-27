@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stule/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p class="switch" id="switch" onclick="Switchi()"><i class="fa-solid fa-toggle-off"></i></p>
+    </header>
+    <main>
+        <div class="calculator">
+            <div class="calcHead">
+                <p class="answer" id="answer">0</p>
+            </div>
+            <p class="gamosaxuleba" id="gamosaxuleba">0</p>
+            <div class="calcbuton flex">
+                <p onclick="ac()" class="flex btn gia">AC</p>
+                <p class="flex btn gia">&plusmn;</p>
+                <p onclick="operator(this)" class="flex btn gia">&percnt;</p>
+                <p onclick="operator(this)" class="flex btn orange">&divide;</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">7</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">8</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">9</p>
+                <p onclick="operator(this)" class="flex btn orange">&times;</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">4</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">5</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">6</p>
+                <p onclick="operator(this)" class="flex btn orange">&minus;</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">1</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">2</p>
+                <p onclick="calculate(this)" class="flex btn nacari calculate">3</p>
+                <p onclick="operator(this)" class="flex btn orange">&plus;</p>
+                <p onclick="calculate(this)" class="flex btn zero nacari calculate">0</p>
+                <p onclick="operator(this)" class="flex btn nacari">&comma;</p>
+                <p class="flex btn orange">&equals;</p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/58500cf807.js" crossorigin="anonymous"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/plsm.js"></script>
+    <script src="js/ac.js"></script>
+    <script src="js/operat.js"></script>
+    <script src="js/switch.js"></script>
+</body>
+</html>
